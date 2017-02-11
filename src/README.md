@@ -1,4 +1,4 @@
-### Developer: Mike McGookey - Credit template to Jon Pugh
+### Developer: Mike McGookey
 
 ### Features:
   - 

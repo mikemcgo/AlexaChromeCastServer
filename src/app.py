@@ -7,7 +7,7 @@ app = Flask(__name__, template_folder='templates')
 
 # Register the controllers
 app.register_blueprint(controllers.main)
-app.register_blueprint(site_reporter.receive)
+app.register_blueprint(controllers.site_reporter)
 
 # Listen on external IPs using the configured port
 if __name__ == '__main__':
