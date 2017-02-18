@@ -1,2 +1,3 @@
+from list_receiver import *
 from main import *
-from site_reporter import *
+from machine_receiver import *

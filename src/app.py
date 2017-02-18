@@ -15,7 +15,8 @@ redis = Redis(app)
 
 # Register the controllers
 app.register_blueprint(controllers.main)
-app.register_blueprint(controllers.site_reporter)
+app.register_blueprint(controllers.machine_receiver)
+app.register_blueprint(controllers.list_receiver)
 
 # Listen on external IPs using the configured port
 if __name__ == '__main__':
