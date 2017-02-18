@@ -5,7 +5,9 @@ main = Blueprint('main', __name__, template_folder='templates')
 
 @main.route('/')
 def main_route():
-	print current_app.extensions['redis']['REDIS']
+	# find all keys with -machine
 	db = current_app.extensions['redis']['REDIS']
-	db.set('key', 'value')
-	return jsonify(db.get('key'))
+	possible_channels = ['asdf', 'asdf1', 'asdf2']
+	db.lpush('key1', *possible_channels)
+	print(db.lrange('key1',0,-1)[0])
+	return jsonify(db.lrange('key1',0,-1))

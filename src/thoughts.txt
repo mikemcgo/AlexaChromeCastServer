@@ -1,0 +1,3 @@
+thoughts
+name lists in redis with *-list (can be retrieved with keys *-list) lpush, lrange
+same for machines *-machines - http://stackoverflow.com/questions/32276493/how-to-store-and-retrieve-a-dictionary-with-redis - hmset, hgetall

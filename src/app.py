@@ -9,6 +9,7 @@ app = Flask(__name__, template_folder='templates')
 app.config['REDIS_HOST'] = '127.0.0.1'
 app.config['REDIS_PORT'] = 6379
 app.config['REDIS_DB'] = 0
+app.config['REDIS_PASSWORD'] = "foobared"
 
 redis = Redis(app)
 
